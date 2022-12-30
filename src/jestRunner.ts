@@ -64,8 +64,8 @@ export class JestRunner {
 
     this.previousCommand = command;
 
-    await this.goToCwd();
-    await this.runTerminalCommand(command);
+    // await this.goToCwd();
+    // await this.runTerminalCommand(command);
 
     await this.runExternalNativeTerminalCommand(this.commands);
   }
